@@ -19,10 +19,14 @@ But you can use all the dependencies by `composer install` on the root Laravel d
 
 The best way of using the Redis on Laravel is through the use of the `Illuminate\Support\Facades\Redis` Facade.
 
-`use Illuminate\Support\Facades\Redis;
-Redis::incr('visits') // this will be auto incremented
-$visits = Redis::incr('visits');
-return view('welcome')->with(['visits' => $visits]);`
+`use Illuminate\Support\Facades\Redis;`
+`Redis::incr('visits') // this will be auto incremented`
+`$visits = Redis::incr('visits');`
+`return view('welcome')->with(['visits' => $visits]);`
+
+## Environment values
+
+Check the `.env.example` file
 
 ## Commands Conventions
 
